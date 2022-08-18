@@ -8,7 +8,7 @@
 * Control points should be expressed in a matrix `P_`, each column of this matrix represents a control point given by the users and this matrix should contains the start point at the first column and the end point at the last column.     
 * The coefficients of each segment of the whole path are loaded in `CS->a`, `CS->b`, `CS->c` and `CS->d` after run the function `CS->CubicSplineRun`, if you want to know the specific form of the equation corresponding to each paragraph, please do not commented macro definition `CUBICSPLINE_TEST_PRINT_EQUATION`.
 * Parameters `NATURAL`, `CLAMPED` and `NOT_A_KNOT` means different end condition, could be use as `CS->CubicSplineRun(control_pt, NATURAL)` or `CS->CubicSplineRun(control_pt, CLAMPED)` or `CS->CubicSplineRun(control_pt, NOT_A_KNOT)` in the example in `main.cpp`.     
-* The test result is as the follow figures, the red line corresponds to `NATURAL`， the blue line corresponds to `CLAMPED` and the green line corresponds to `NOT_A_KNOT`.     
+* The test result is as the follow figures, the red line corresponds to `NATURAL`， the blue line corresponds to `CLAMPED` and the green line corresponds to `NOT_A_KNOT`. Control points are set as `(0, 0)` & `(2, 6)` & `(3, -1)` & `(7, 0)`, all of them are plot as the black dot in the figure.      
 
 <div align=center>
   <img src="result.png" width=60%>
